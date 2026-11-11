@@ -1,0 +1,19 @@
+# Trading Agent — Python dependencies
+# Requires Python 3.10+ (uses PEP 604 "X | None" type syntax at runtime).
+#
+# Install:  pip install -r requirements.txt
+#
+# Note on pandas-ta: on Python 3.12+ pip resolves a modern pandas-ta release
+# that supports NumPy 2. On older Pythons pip installs 0.3.14b0, which imports
+# the removed `numpy.NaN`; indicators.py ships a shim that restores it, so
+# both combinations work.
+
+yfinance>=0.2.40
+pandas>=2.0.0
+pandas-ta>=0.3.14b0
+langgraph>=0.2.0
+langchain>=0.2.0
+langchain-openai>=0.1.0
+langchain-core>=0.2.0
+openai>=1.30.0
+python-dotenv>=1.0.0
